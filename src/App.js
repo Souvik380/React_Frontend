@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Add_Another_Keyword from './components/Add_Another_Keyword';
+import API_list from './components/API_list';
+import Filters from './components/Filters';
+import Header from './components/Header';
+import SideCol from './components/SideCol';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="top">
+      <p>Add Keyword</p>
+      <div className="app-container">
+        <SideCol />
+        <div className="sub-container">   
+          <Header />
+          <Add_Another_Keyword />
+          <Filters />
+          <API_list />
+        </div>
+      </div>
     </div>
   );
 }
